@@ -1,0 +1,38 @@
+.tour-details-wrapper {
+  margin: 0 auto;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.book-tour-title {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.book-tour-subtitle {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.boot-tour-wrapper ul {
+  margin: 0;
+  padding: 0 20px;
+}
+
+.boot-tour-wrapper ul li {
+  /* font-size: 14px; */
+  margin: 20px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.book-tour-form-wrapper {
+  background-color: #fff;
+  padding: 60px 40px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.book-tour-form-wrapper .book-tour-subtitle {
+  color: #333;
+}

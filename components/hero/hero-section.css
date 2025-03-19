@@ -1,0 +1,36 @@
+.hero-wrapper {
+  height: 60dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  margin-bottom: 40px;
+}
+
+.hero-title {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin: 30px 0;
+}
+
+.hero-action-btn {
+  padding: 7px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.contact-sales-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  margin-right: 20px;
+  border: 1px solid var(--primary-color);
+}
