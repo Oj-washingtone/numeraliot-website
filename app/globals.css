@@ -14,7 +14,7 @@ body {
 }
 
 .section {
-  margin: 100px 0;
+  margin: 60px 0;
 }
 
 .input-field {
@@ -45,9 +45,21 @@ body {
 }
 
 .section-title {
+  position: relative;
   font-size: 30px;
   font-weight: 800;
   margin: 20px 0;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px; /* Adjust distance from text */
+  left: 0;
+  width: 50%; /* Covers only half the text */
+  height: 7px; /* Thickness of underline */
+  background-color: var(--primary-color);
 }
 
 p {
@@ -84,6 +96,13 @@ p {
   width: 50%; /* Covers only half the text */
   height: 7px; /* Thickness of underline */
   background-color: var(--primary-color);
+}
+
+.product-section-subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin: 20px 0;
 }
 
 .product-solution-intro {

@@ -66,6 +66,7 @@ const navItems = [
         description:
           "Designing and producing high-quality IoT devices at scale.",
         link: "solutions/solution",
+        icon: "/icons/Hardware-icon.png",
       },
 
       {
@@ -73,23 +74,20 @@ const navItems = [
         description:
           "Real-time tracking, analytics, and optimization for smarter fleet management.",
         link: "solutions/solution",
+        icon: "/icons/Fleet-Telematics Icon.png",
       },
       {
         name: "IoT Platforms",
         description:
           "Scalable, secure, and intelligent connectivity for all your devices.",
         link: "solutions/solution",
+        icon: "/icons/IOT-PLATFORMS-ICON.png",
       },
       {
         name: "Infinity engine",
         description: "Infinity engine",
         link: "solutions/solution",
-      },
-      {
-        name: "Agriculture",
-        description:
-          "farming solutions for increased efficiency and productivity.",
-        link: "solutions/solution",
+        icon: "/icons/Infinity-Icon.png",
       },
     ],
   },
@@ -164,10 +162,20 @@ export default function Nav() {
                     <div key={subIndex} className="col-md-4">
                       <a href={subItem.link}>
                         <div className="menu-dropdown-item">
-                          <div className="menu-item-icon">
-                            <img src={subItem?.icon} />
-                          </div>
-                          <div className="menu-item-details">
+                          {subItem.icon && (
+                            <div className="menu-item-icon">
+                              <img src={subItem?.icon} />
+                            </div>
+                          )}
+
+                          <div
+                            className="menu-item-details"
+                            style={{
+                              width: subItem.icon
+                                ? "calc(100% - 60px)"
+                                : "100%",
+                            }}
+                          >
                             {subItem.name}
                             <p>{subItem.description}</p>
                           </div>

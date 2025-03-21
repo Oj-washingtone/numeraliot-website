@@ -10,7 +10,7 @@ export default function page() {
       <HeroSection />
       <About />
       {/* <Leadership /> */}
-      {/* <BookTour /> */}
+      <BookTour />
     </div>
   );
 }

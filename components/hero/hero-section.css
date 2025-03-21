@@ -34,3 +34,20 @@
   margin-right: 20px;
   border: 1px solid var(--primary-color);
 }
+
+@media (max-width: 991px) {
+  .hero-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    font-size: 14px;
+    text-align: center;
+  }
+  .hero-actiosn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
