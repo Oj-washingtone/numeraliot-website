@@ -4,6 +4,7 @@ import { useState } from "react";
 import "./header.css";
 import Link from "next/link";
 import Nav from "./Nav";
+import MenuDropdown from "./MenuDropdown";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,6 +25,7 @@ export default function Header() {
 
           <div className="nav-links">
             <Nav />
+            {/* <MenuDropdown>Menu dropdown</MenuDropdown> */}
           </div>
 
           <div className="header-right-small">

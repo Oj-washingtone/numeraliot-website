@@ -9,8 +9,8 @@ export default function HeroSection() {
           <div className="col-md-6">
             <h1 className="hero-title">Revolutionalizing IoT Across Africa</h1>
             <h3 className="hero-subtitle">
-              The rollout of our new IoT technologies designed by Numeral iot
-              has begun!
+              We are on a mission to build Africa's largest IOT service platform
+              powered by proprietory hardware
             </h3>
 
             <div className="hero-actiosn">

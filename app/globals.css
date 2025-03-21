@@ -4,7 +4,7 @@
 @import "tailwindcss";
 
 :root {
-  --primary-color: #5dbe83;
+  --primary-color: #009673;
   --secondary-color: #38414f;
   --tertiary-color: #b1dcbe;
 }
@@ -14,7 +14,7 @@ body {
 }
 
 .section {
-  margin: 40px 0;
+  margin: 100px 0;
 }
 
 .input-field {
@@ -42,4 +42,54 @@ body {
 .submit-btn {
   margin-top: 20px;
   /* border-radius: 5px; */
+}
+
+.section-title {
+  font-size: 30px;
+  font-weight: 800;
+  margin: 20px 0;
+}
+
+p {
+  font-size: 0.875rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.generic-hero {
+  height: 20dvh;
+  background-color: #fff;
+  margin-top: 100px;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.product-solution-title {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  display: inline-block;
+  margin-top: 40px;
+}
+.product-solution-title::after {
+  content: "";
+  position: absolute;
+  bottom: -20px; /* Adjust distance from text */
+  left: 0;
+  width: 50%; /* Covers only half the text */
+  height: 7px; /* Thickness of underline */
+  background-color: var(--primary-color);
+}
+
+.product-solution-intro {
+  margin-top: 50px;
+}
+
+.product-solutions-details {
+  padding: 20px 30px;
 }

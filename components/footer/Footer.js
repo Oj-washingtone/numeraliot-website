@@ -25,10 +25,16 @@ export default function Footer() {
               <h1 className="footer-title">Products</h1>
               <ul>
                 <li>
-                  <a href="#">Simba Speed Governor:</a>
+                  <a href="#">Simba Speed Governor</a>
                 </li>
                 <li>
                   <a href="#">Bundi Vehicle Tracking & Security</a>
+                </li>
+                <li>
+                  <a href="#">Transit tag</a>
+                </li>
+                <li>
+                  <a href="#">Hewa speakers</a>
                 </li>
                 <li>
                   <a href="#">NIOT Smart Power Meter</a>
@@ -37,7 +43,7 @@ export default function Footer() {
                   <a href="#">NIOT Smart Water Meter</a>
                 </li>
                 <li>
-                  <a href="#">NIOT Smart Water Meter</a>
+                  <a href="#">NIOT Smart Gas Meter</a>
                 </li>
               </ul>
             </div>
@@ -45,6 +51,9 @@ export default function Footer() {
             <div className="col-md-2">
               <h1 className="footer-title">Solutions</h1>
               <ul>
+                <li>
+                  <a href="#">Hardware Manufacturing</a>
+                </li>
                 <li>
                   <a href="#">Infinity engine</a>
                 </li>
@@ -73,7 +82,7 @@ export default function Footer() {
                   <a href="#">Careers</a>
                 </li>
                 <li>
-                  <a href="#">News room</a>
+                  <a href="#">Press</a>
                 </li>
                 <li>
                   <a href="#">Events</a>
@@ -107,19 +116,27 @@ export default function Footer() {
       <div className="footer-stripe">
         <div className="container">
           <div className="footer-stripe-items">
-            <p className="footer-copy">&copy; 2025. All rights reserved.</p>
+            <p className="footer-copy">
+              &copy; 2025. Numeral IoT | All rights reserved.
+            </p>
             <div className="footer-socials">
               <a href="#">
                 <i className="bi bi-facebook"></i>
               </a>
               <a href="#">
-                <i className="bi bi-twitter"></i>
+                <i className="bi bi-twitter-x"></i>
               </a>
               <a href="#">
                 <i className="bi bi-instagram"></i>
               </a>
               <a href="#">
+                <i className="bi bi-youtube"></i>
+              </a>
+              <a href="#">
                 <i className="bi bi-linkedin"></i>
+              </a>
+              <a href="#">
+                <i className="bi bi-tiktok"></i>
               </a>
             </div>
           </div>
