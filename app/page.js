@@ -1,16 +1,21 @@
 import About from "@/components/about/About";
-import BookTour from "@/components/book-tour/BookTour";
-import HeroSection from "@/components/hero/HeroSection";
-import Leadership from "@/components/leadership/Leadership";
+import Hero from "@/components/hero/Hero";
+import Partners from "@/components/partners/partners";
+import Products from "@/components/products/Products";
+import ServiceSection from "@/components/services/ServiceSection";
+import Video from "@/components/video/Video";
+import WhyChooseUs from "@/components/why-us/WhyChooseUs";
 import React from "react";
 
 export default function page() {
   return (
     <div className="">
-      <HeroSection />
+      <Hero />
+      <Partners />
       <About />
-      {/* <Leadership /> */}
-      <BookTour />
+      <ServiceSection />
+      <Products />
+      <WhyChooseUs />
     </div>
   );
 }

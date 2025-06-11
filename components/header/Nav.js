@@ -134,7 +134,6 @@ const navItems = [
       },
     ],
   },
-  { name: "Shop", hasDropdown: false, link: "#" },
   { name: "Blog", hasDropdown: false, link: "#" },
   { name: "FAQs", hasDropdown: false, link: "#" },
 ];

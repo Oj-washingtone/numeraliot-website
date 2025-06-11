@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./header.css";
 import Link from "next/link";
 import Nav from "./Nav";
@@ -8,12 +8,35 @@ import MenuDropdown from "./MenuDropdown";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [headerClass, setHeaderClass] = useState("header-transparent");
 
   const toggleMunu = () => {
     setMenuOpen(!menuOpen);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const heroHeight =
+        document.querySelector(".hero-section")?.offsetHeight || 100;
+
+      if (scrollTop === 0) {
+        setHeaderClass("header-transparent");
+      } else if (scrollTop < heroHeight - 60) {
+        setHeaderClass("header-darken");
+      } else {
+        setHeaderClass("header-solid");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // run once on mount
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="header-wrapper">
+    <div className={`header-wrapper ${headerClass}`}>
       <div className="container">
         <div className="nav-main">
           <div className="logo">
@@ -29,11 +52,11 @@ export default function Header() {
           </div>
 
           <div className="header-right-small">
-            <div className="extra-links-wrapper">
+            {/* <div className="extra-links-wrapper">
               <a href="/auth/signin" className="extra-links">
                 Staff Login
               </a>
-            </div>
+            </div> */}
 
             <button className="nav-toggle-btn" onClick={toggleMunu}>
               {menuOpen ? (
@@ -45,9 +68,9 @@ export default function Header() {
           </div>
 
           <div className="nav-actions">
-            <a href="/auth/signin" className="extra-links">
+            {/* <a href="/auth/signin" className="extra-links">
               Staff login
-            </a>
+            </a> */}
 
             {/* <button
               className="nav-act-btn nav-act-btn-login"

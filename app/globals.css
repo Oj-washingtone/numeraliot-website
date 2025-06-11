@@ -1,114 +1,143 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 
 @import "tailwindcss";
 
 :root {
   --primary-color: #009673;
-  --secondary-color: #38414f;
-  --tertiary-color: #b1dcbe;
+  --secondary-color: #56cda7;
+  --tertiary-color: #cafbe8;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .section {
-  margin: 60px 0;
-}
-
-.input-field {
-  border: 1px solid #ccc;
-  padding: 7px 20px;
-  border-radius: 5px;
-  margin: 20px 0;
-  width: 100%;
+  margin: 40px 0;
 }
 
 ._btn {
-  padding: 7px 20px;
+  padding: 8px 20px;
   border: none;
   outline: none;
   border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #fff;
 }
 
 ._btn_primary {
   background-color: var(--primary-color);
   border: 1px solid var(--primary-color);
   color: #fff;
-  font-weight: 700;
 }
 
-.submit-btn {
-  margin-top: 20px;
-  /* border-radius: 5px; */
+._btn_simple {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
 }
 
-.section-title {
-  position: relative;
-  font-size: 30px;
-  font-weight: 800;
-  margin: 20px 0;
-  display: inline-block;
+._btn_link {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--primary-color);
+  text-decoration: underline;
 }
 
-.section-title::after {
-  content: "";
-  position: absolute;
-  bottom: -10px; /* Adjust distance from text */
-  left: 0;
-  width: 50%; /* Covers only half the text */
-  height: 7px; /* Thickness of underline */
-  background-color: var(--primary-color);
-}
-
-p {
-  font-size: 0.875rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-}
-
-.generic-hero {
-  height: 20dvh;
-  background-color: #fff;
-  margin-top: 100px;
-  position: relative;
-  border-radius: 5px;
-  margin-bottom: 40px;
+.section-header-center {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
 
-.product-solution-title {
-  position: relative;
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  display: inline-block;
-  margin-top: 40px;
-}
-.product-solution-title::after {
-  content: "";
-  position: absolute;
-  bottom: -20px; /* Adjust distance from text */
-  left: 0;
-  width: 50%; /* Covers only half the text */
-  height: 7px; /* Thickness of underline */
-  background-color: var(--primary-color);
+.section-header {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
 }
 
-.product-section-subtitle {
-  font-size: 20px;
-  font-weight: 700;
-  font-family: "Poppins", sans-serif;
+.section-subheader {
+  font-size: 16px;
+  font-weight: 500;
+  color: gray;
+  text-align: center;
   margin: 20px 0;
 }
 
-.product-solution-intro {
-  margin-top: 50px;
+.black {
+  background-color: #0f0f0f;
 }
 
-.product-solutions-details {
-  padding: 20px 30px;
+.header-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 60px auto 40 auto;
+  width: 60%;
+  font-family: "Inter", sans-serif;
+}
+
+.header-title {
+  color: #292a2d;
+  font-size: 36px;
+  font-weight: 700;
+
+  margin-bottom: 20px;
+}
+
+.header-title span {
+  color: #00c853;
+}
+
+.title-explanation {
+  font-size: 13px;
+}
+
+.scroll-up-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  background-color: #00c853;
+  padding: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondary-title-part {
+  color: #00c853;
+}
+
+@media screen and (max-width: 768px) {
+  .header-center {
+    width: 100%;
+  }
+
+  .header-title {
+    font-size: 25px;
+  }
 }

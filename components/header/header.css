@@ -1,11 +1,26 @@
 .header-wrapper {
   width: 100%;
   padding: 10px 0;
-  border-bottom: 1px solid #f2f3f5;
   position: fixed;
   top: 0;
-  background-color: #fff;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
   z-index: 1000;
+}
+
+.header-transparent {
+  background-color: rgba(0, 0, 0, 0); /* fully transparent */
+  box-shadow: none;
+}
+
+.header-darken {
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  backdrop-filter: blur(4px); /* optional: frosted glass effect */
+}
+
+.header-solid {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: black;
 }
 
 .nav-main {
@@ -55,7 +70,7 @@
   margin: 0 20px;
   float: left;
   font-weight: bold !important;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .nav-links ul li:hover .main-menu-link {
@@ -71,7 +86,15 @@
   color: #333;
   font-size: 14px;
   font-weight: 600;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+.header-transparent .main-menu-link {
+  color: #fff;
+}
+
+.header-darken .main-menu-link {
+  color: #fff;
 }
 
 .nav-act-btn {

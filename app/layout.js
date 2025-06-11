@@ -29,6 +29,9 @@ export default function RootLayout({ children }) {
       >
         <Header />
         {children}
+        <button className="scroll-up-btn">
+          <i className="bi bi-arrow-up"></i>
+        </button>
         <Footer />
       </body>
     </html>

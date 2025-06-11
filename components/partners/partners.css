@@ -1,0 +1,45 @@
+.partners-section {
+  background: #f9f9f9;
+  padding: 15px 0;
+  overflow: hidden;
+}
+
+.brands-scroll-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.patners-title {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+
+.brands-scroll {
+  display: flex;
+  width: fit-content;
+  animation: scroll 30s linear infinite;
+}
+
+.brand-img {
+  width: 90px;
+  margin: 0 20px;
+  object-fit: contain;
+}
+
+/* Keyframes for the scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .partners-section {
+    padding-top: 30px;
+  }
+}
