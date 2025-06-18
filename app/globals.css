@@ -16,6 +16,9 @@ body {
 
 .section {
   margin: 40px 0;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  z-index: 2;
 }
 
 ._btn {
@@ -110,7 +113,7 @@ body {
   font-size: 13px;
 }
 
-.scroll-up-btn {
+/* .scroll-up-btn {
   position: fixed;
   right: 20px;
   bottom: 50px;
@@ -126,10 +129,95 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .secondary-title-part {
   color: #00c853;
+}
+
+.scroll-up-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #00c853;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-up-btn i {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.scroll-up-btn:hover {
+  opacity: 1;
+}
+
+.card-gray {
+  background-color: #f2f3f5;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: "Inter", sans-serif;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 900;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 20px;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  margin: 10px 0;
+}
+
+.card-gray a {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.card-gray a:hover {
+  color: var(--primary-color);
+}
+
+.contact-card i {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #00c853;
+}
+
+.unhide-section {
+  padding-top: 70px;
+}
+
+.margin-auto {
+  margin: 20px auto;
+}
+
+.submit-button {
+  background-color: #00c853;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  width: max-content;
+}
+
+.submit-button:hover {
+  background-color: #01d65a;
 }
 
 @media screen and (max-width: 768px) {

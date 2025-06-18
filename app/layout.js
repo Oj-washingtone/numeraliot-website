@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "boxicons/css/boxicons.min.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
+import ScrollUp from "@/components/ScrollUp";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,9 +30,7 @@ export default function RootLayout({ children }) {
       >
         <Header />
         {children}
-        <button className="scroll-up-btn">
-          <i className="bi bi-arrow-up"></i>
-        </button>
+        <ScrollUp />
         <Footer />
       </body>
     </html>

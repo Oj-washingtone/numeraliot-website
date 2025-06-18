@@ -3,7 +3,7 @@ import "./products.css";
 
 export default function Products() {
   return (
-    <div className="section">
+    <div className="section product-wrapper">
       <div className="container">
         <div className="header-center">
           <h1 className="header-title ">

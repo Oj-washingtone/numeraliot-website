@@ -4,12 +4,12 @@ import "./footer.css";
 export default function Footer() {
   return (
     <div>
-      <footer className="footer">
+      <footer className="footer black">
         <div className="container">
           <div className="row">
             <div className="col-md-3">
               <div className="footer-logo">
-                <img src="/logo/logo1.png" alt="logo" />
+                <img src="/logo/logo-white.png" alt="logo" />
               </div>
 
               <div className="small-intro">
@@ -113,7 +113,7 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-      <div className="footer-stripe">
+      <div className="footer-stripe black">
         <div className="container">
           <div className="footer-stripe-items">
             <p className="footer-copy">

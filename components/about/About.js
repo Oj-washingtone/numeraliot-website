@@ -30,20 +30,33 @@ export default function About() {
           </div>
 
           <div className="about-right">
-            <div className="badge">🤝 Your gateway to digital success</div>
+            <div className="badge">🤝 Your gateway to IoT solutions</div>
             <h1>
               Defining the future of <br />
               <span className="highlight">IoT in Africa!</span>
             </h1>
-            <p>
-              Embrace a new era of digital success with Mizzle. Our team
-              combines cutting-edge design with robust development to deliver
-              websites that captivate and convert.
+            <p className="about-description">
+              At Numeral IOT, we're shaping Africa’s connected future — one
+              device at a time. We build powerful IoT solutions that bridge the
+              gap between physical systems and digital intelligence, enabling
+              safer roads, smarter infrastructure, and data-driven decisions.
+              From speed governors that save lives to custom-built platforms
+              that power next-generation services, we’re engineering the
+              technology that moves Africa forward.
             </p>
             <ul className="features">
-              <li>✅ Emphasis on ROI-driven solutions</li>
-              <li>✅ Expert team with diverse skill</li>
-              <li>✅ Proven track record of delivering results</li>
+              <li>
+                <i className="bi bi-check-circle-fill"></i> Smart, Scalable IoT
+                Solutions
+              </li>
+              <li>
+                <i className="bi bi-check-circle-fill"></i> End-to-End
+                Innovation
+              </li>
+              <li>
+                <i className="bi bi-check-circle-fill"></i> Security &
+                Reliability First
+              </li>
             </ul>
             <button className="discover-button">Learn more</button>
           </div>

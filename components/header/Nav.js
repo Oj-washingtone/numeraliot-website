@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./header.css";
 import MenuDropdown from "./MenuDropdown";
 
@@ -11,48 +11,47 @@ const navItems = [
         name: "Simba Speed Governor",
         description:
           "Reliable speed regulation for safer and compliant driving.",
-        link: "/products/simba-speed-governor",
+        link: "/products/simba",
         icon: "/icons/SIMBA-SPEED-ICON.png",
       },
-
       {
         name: "Bundi Vehicle Tracking & Security",
         description: "Real-time tracking and protection for your vehicle.",
-        link: "/products/bundi-vehicle-tracking-security",
+        link: "/products/bundi",
         icon: "/icons/Bundi Tracking Icon.png",
       },
       {
         name: "Hewa speakers",
         description:
           "Compact, high-quality sound with dual pairing for a richer experience.",
-        link: "/products/hewa-speakers",
+        link: "/products/hewa",
         icon: "/icons/HEWA-ICON.png",
       },
       {
         name: "NIOT Smart Power Meter",
         description:
           "Track usage, share tokens, and manage power effortlessly.",
-        link: "/products/niot-smart-power-meter",
+        link: "/products/power",
         icon: "/icons/Power-Meter-ICON.png",
       },
       {
         name: "NIOT Smart Water Meter",
         description:
-          " Monitor usage, detect leaks, and manage water efficiently.",
-        link: "/products/niot-smart-water-meter",
+          "Monitor usage, detect leaks, and manage water efficiently.",
+        link: "/products/water",
         icon: "/icons/Water-Meter.png",
       },
       {
         name: "NIOT Smart Gas Meter",
         description:
           "Monitor usage, enhance safety, and manage gas efficiently.",
-        link: "/products/niot-smart-gas-meter",
+        link: "/products/#",
         icon: "/icons/Gas-Meter.png",
       },
       {
         name: "Transit tag",
         description: "Monitor your kids transportation from and to school",
-        link: "/products/transit-tag",
+        link: "https://transittag.com/",
         icon: "/icons/Transit-Tag-Icon.png",
       },
     ],
@@ -68,7 +67,6 @@ const navItems = [
         link: "solutions/solution",
         icon: "/icons/Hardware-icon.png",
       },
-
       {
         name: "Fleet Telematics",
         description:
@@ -135,25 +133,58 @@ const navItems = [
     ],
   },
   { name: "Blog", hasDropdown: false, link: "#" },
-  { name: "FAQs", hasDropdown: false, link: "#" },
 ];
 
 export default function Nav() {
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const updateMedia = () => {
+      setIsMobile(window.innerWidth <= 991);
+    };
+
+    updateMedia();
+    window.addEventListener("resize", updateMedia);
+    return () => window.removeEventListener("resize", updateMedia);
+  }, []);
+
+  const toggleMobileDropdown = (index) => {
+    setActiveDropdown(activeDropdown === index ? null : index);
+  };
 
   return (
     <ul className="nav-menu">
       {navItems.map((item, index) => (
         <li
           key={index}
-          onMouseEnter={() => item.hasDropdown && setActiveDropdown(index)}
-          onMouseLeave={() => item.hasDropdown && setActiveDropdown(null)}
+          onMouseEnter={
+            !isMobile && item.hasDropdown
+              ? () => setActiveDropdown(index)
+              : undefined
+          }
+          onMouseLeave={
+            !isMobile && item.hasDropdown
+              ? () => setActiveDropdown(null)
+              : undefined
+          }
           className={item.hasDropdown ? "has-dropdown" : ""}
         >
-          <a href={item.link || "#"} className="main-menu-link">
+          <a
+            href={item.link || "#"}
+            className="main-menu-link"
+            onClick={(e) => {
+              if (isMobile && item.hasDropdown) {
+                e.preventDefault(); // prevent navigation
+                toggleMobileDropdown(index);
+              }
+            }}
+          >
             {item.name}
           </a>
-          {item.hasDropdown && activeDropdown === index && (
+
+          {/* Desktop dropdown */}
+          {item.hasDropdown && activeDropdown === index && !isMobile && (
             <MenuDropdown>
               <div className="menu-dropdown-items-wrapper">
                 <div className="row">
@@ -166,7 +197,6 @@ export default function Nav() {
                               <img src={subItem?.icon} />
                             </div>
                           )}
-
                           <div
                             className="menu-item-details"
                             style={{
@@ -185,6 +215,17 @@ export default function Nav() {
                 </div>
               </div>
             </MenuDropdown>
+          )}
+
+          {/* Mobile dropdown (simple text links) */}
+          {item.hasDropdown && activeDropdown === index && isMobile && (
+            <ul className="mobile-submenu">
+              {item.content.map((subItem, subIndex) => (
+                <li key={subIndex}>
+                  <a href={subItem.link}>{subItem.name}</a>
+                </li>
+              ))}
+            </ul>
           )}
         </li>
       ))}

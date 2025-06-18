@@ -91,7 +91,7 @@
 }
 
 .about-right p {
-  font-size: 16px;
+  font-size: 14px;
   color: #555;
   margin-bottom: 20px;
 }
@@ -101,6 +101,11 @@
   padding-left: 0;
   color: #333;
   margin-bottom: 30px;
+}
+
+.features i {
+  color: #00c853;
+  font-size: 16px;
 }
 
 .features li {

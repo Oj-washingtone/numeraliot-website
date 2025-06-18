@@ -35,7 +35,7 @@ export default function Hero() {
   return (
     <div className="hero-section">
       <video className="hero-background-video" autoPlay muted loop playsInline>
-        <source src="/production.mp4" type="video/mp4" />
+        <source src="/production.mov" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
