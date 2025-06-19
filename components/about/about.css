@@ -127,3 +127,13 @@
 .discover-button:hover {
   background-color: #333;
 }
+
+@media screen and (max-width: 768px) {
+  .about-section {
+    padding: 20px;
+  }
+
+  .about-right h1 {
+    font-size: 25px;
+  }
+}
