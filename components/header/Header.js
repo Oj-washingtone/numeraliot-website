@@ -115,7 +115,9 @@ export default function Header() {
               Login
             </button> */}
               <Link href={"/contactus"}>
-                <div className="nav-act-btn">Contact us</div>
+                <div className="nav-act-btn">
+                  <i className="bi bi-headset"></i> Contact us
+                </div>
               </Link>
             </div>
           </div>

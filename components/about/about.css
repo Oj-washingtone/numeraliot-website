@@ -43,7 +43,7 @@
 }
 
 .stat-box {
-  padding: 20px;
+  padding: 20px 10px;
   border-radius: 10px;
   color: white;
   width: 170px;
@@ -51,11 +51,11 @@
 }
 
 .green {
-  background-color: #00c853;
+  background-color: var(--primary-color);
 }
 
 .stat-box h2 {
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 700;
   margin: 0;
 }
@@ -104,7 +104,7 @@
 }
 
 .features i {
-  color: #00c853;
+  color: var(--primary-color);
   font-size: 16px;
 }
 

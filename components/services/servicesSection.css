@@ -34,7 +34,7 @@
 }
 
 .service-name:hover {
-  color: #00c853;
+  color: var(--primary-color);
 }
 
 .service-description {
@@ -43,7 +43,7 @@
 }
 
 .link {
-  color: #00c853;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -62,5 +62,5 @@
 
 .icon-holder i {
   font-size: 25px;
-  color: #00c853;
+  color: var(--primary-color);
 }

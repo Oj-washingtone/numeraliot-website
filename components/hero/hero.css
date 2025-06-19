@@ -44,6 +44,7 @@
 .hero-description {
   color: #fff;
   margin-top: 20px;
+  font-size: 13px;
 }
 
 .hero-btn {
@@ -61,7 +62,7 @@
 
 @media screen and (max-width: 768px) {
   .hero-section {
-    height: 80dvh;
+    height: 100dvh;
   }
 
   .hero-descriptions-wrapper {
@@ -70,6 +71,6 @@
   }
 
   .hero-main-text {
-    font-size: 30px;
+    font-size: 25px;
   }
 }

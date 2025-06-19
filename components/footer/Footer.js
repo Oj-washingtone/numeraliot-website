@@ -102,7 +102,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <i className="bi bi-telephone-fill footer-link-icon"></i> +254
-                  712 028 821
+                  111 014 700
                 </li>
                 <li>
                   <i className="bi bi-envelope-fill footer-link-icon"></i>{" "}

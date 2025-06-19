@@ -41,7 +41,7 @@
 
 .industry {
   font-size: 20px;
-  color: #00c853;
+  color: var(--primary-color);
 }
 
 .explore-btn {
