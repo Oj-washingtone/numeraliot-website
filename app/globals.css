@@ -113,32 +113,14 @@ body {
   font-size: 13px;
 }
 
-/* .scroll-up-btn {
-  position: fixed;
-  right: 20px;
-  bottom: 50px;
-  background-color: #00c853;
-  padding: 10px;
-  color: #fff;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 10px;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 .secondary-title-part {
   color: var(--primary-color);
 }
 
 .scroll-up-btn {
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: 1rem;
+  right: 1rem;
   background: var(--primary-color);
   color: #fff;
   border: none;
