@@ -9,30 +9,35 @@ const products = {
       "Introducing Simba 4G, a cutting-edge IoT-enabled speed governor designed and manufactured by Numeral IOT in full compliance with KEBS KS 2295:2018, CMTE, and NTSA regulations. Engineered for reliability and versatility, Simba 4G is a 3-in-1 device that integrates a speed limiter, real-time fleet management system, and speed recorder into a single compact unit. It is compatible with all types of commercial and private vehicles, including buses, trucks, matatus, and vans. Trusted across the transport sector, Simba 4G has proven to enhance road safety and operational efficiency—making it the top-performing speed governor on the market.",
     features: [
       {
-        feature: "Speed Control",
-        explanation: "Limits max speed effectively.",
+        feature: "Speed Limiting",
+        explanation:
+          "Commercial vehicles, matatus, omnibuses, and other public service vehicles are restricted from exceeding 80 kilometers per hour on Kenyan roads. Simba 5G enforces this by capping the speed at 80 km/h. If the vehicle exceeds this limit, an alarm goes off, and if the driver does not slow down, the engine will progressively reduce the vehicle's speed to 80 km/h",
       },
       {
-        feature: "Real-time Tracking",
-        explanation: "GPS-based location updates.",
+        feature: "Integrated GPS Tracking ",
+        explanation:
+          "Simba Speed Governor's GPS tracking system uses satellite technology to pinpoint vehicles in real time. Once the location data is collected, it is sent from the device to our central server. This is done in real time via a cellular network. The data is also stored on the device and can be extracted via a USB port on the gadget.",
       },
       {
-        feature: "Real-time Tracking",
-        explanation: "GPS-based location updates.",
+        feature: "Data Recording",
+        explanation:
+          "The device records both the vehicle's speed & position and sends the information to our central servers. Fleet management and enforcement officers can access this data and evaluate each vehicle's movement history. The data contains not only geographic locations, but also timestamps, speed information, and other metrics.",
       },
       {
-        feature: "Real-time Tracking",
-        explanation: "GPS-based location updates.",
+        feature: "AI Technology",
+        explanation:
+          "This new feature will eco our holistic approach to road safety. Not only will fleet managers and enforcers continue to monitor speed and vehicle location, but they will also be able to keep an eye on driver behaviour and road conditions. With this added layer of monitoring, we aim to play our part in reducing road-related accidents.",
       },
       {
-        feature: "Real-time Tracking",
-        explanation: "GPS-based location updates.",
+        feature: "Versatile Compatibility ",
+        explanation:
+          " Simba 5G is compatible with a wide range of vehicles, including buses, trucks, matatus, and private vans. Simba 5G haibagui.",
       },
       {
-        feature: "Real-time Tracking",
-        explanation: "GPS-based location updates.",
+        feature: "Passenger Wi-Fi Connectivity (Upcoming) ",
+        explanation:
+          "Recognizing the need for enhanced passenger experience, future versions of the Simba Speed Governor will include builtin Wi-Fi capabilities, allowing passengers to stay connected on the go.",
       },
-      { feature: "Compliance", explanation: "Certified by KEBS and NTSA." },
     ],
   },
   hewa: {

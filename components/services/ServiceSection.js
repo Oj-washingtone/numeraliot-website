@@ -27,11 +27,6 @@ export default function ServiceSection() {
                 on building durable, scalable devices that power seamless
                 connectivity and long-term performance
               </p>
-              <div className="card-footer">
-                <a href="#" className="link">
-                  Learn more...
-                </a>
-              </div>
             </div>
           </div>
           <div className="col-md-3">
@@ -46,11 +41,6 @@ export default function ServiceSection() {
                 streamline operations, enhance user experience, and provide
                 real-time insights for smarter decisions.
               </p>
-              <div className="card-footer">
-                <a href="#" className="link">
-                  Learn more...
-                </a>
-              </div>
             </div>
           </div>
           <div className="col-md-3">
@@ -65,11 +55,6 @@ export default function ServiceSection() {
                 ensures every product is user-focused, performance-driven, and
                 built to grow with your business.
               </p>
-              <div className="card-footer">
-                <a href="#" className="link">
-                  Learn more...
-                </a>
-              </div>
             </div>
           </div>
 
@@ -86,11 +71,6 @@ export default function ServiceSection() {
                 boost efficiency, responsiveness, and overall system
                 intelligence.
               </p>
-              <div className="card-footer">
-                <a href="#" className="link">
-                  Learn more...
-                </a>
-              </div>
             </div>
           </div>
         </div>

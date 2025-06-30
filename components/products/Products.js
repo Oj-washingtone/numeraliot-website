@@ -38,7 +38,10 @@ export default function Products() {
                 interaction design, resulting in solutions that are powerful,
                 reliable, and genuinely intuitive.
               </p>
-              <a href="#" className="link view-product-link">
+              <a
+                href="/products/infinity-engine"
+                className="link view-product-link"
+              >
                 Learn more <i className="bi bi-arrow-right"></i>
               </a>
             </div>
@@ -63,7 +66,7 @@ export default function Products() {
                 operational efficiency—making it the top-performing speed
                 governor on the market.
               </p>
-              <a href="#" className="link view-product-link">
+              <a href="/products/simba" className="link view-product-link">
                 Learn more <i className="bi bi-arrow-right"></i>
               </a>
             </div>
@@ -104,69 +107,7 @@ export default function Products() {
                 industrial settings, our smart water meter ensures smarter
                 decision-making and sustainable water usage at every level.
               </p>
-              <a href="#" className="link view-product-link">
-                Learn more <i className="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className=" section row">
-          <div className="col-md-6 order-2 order-md-1">
-            <div className="product-info-wrapper">
-              <h1 className="home-product-title industry">Entertainment</h1>
-              <h1 className="home-product-title">Hewa Bluetooth Speaker</h1>
-              <p className="home-product-details">
-                Our Smart Power Meter transforms traditional energy systems by
-                delivering precise, real-time insights into power consumption.
-                Designed to support energy efficiency and sustainability, it
-                enables seamless integration with smart building technologies,
-                helping users monitor usage patterns, reduce energy waste, and
-                make informed decisions. Whether in homes, businesses, or
-                industrial setups, this device lays the groundwork for a
-                smarter, greener, and more reliable power infrastructure.
-              </p>
-              <a href="#" className="link view-product-link">
-                Learn more <i className="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-          <div className="col-md-6 order-1 order-md-2">
-            <div className="product-image-wrapper">
-              <img
-                src="/products/HEWA-PNG.png"
-                alt="Simba speed govanor"
-                className="product-image"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className=" section row">
-          <div className="col-md-6 order-1 order-md-1">
-            <div className="product-image-wrapper">
-              <img
-                src="/products/power-mter.png"
-                alt="Simba speed govanor"
-                className="product-image"
-              />
-            </div>
-          </div>
-          <div className="col-md-6 order-2 order-md-2">
-            <div className="product-info-wrapper">
-              <h1 className="home-product-title industry">Power</h1>
-              <h1 className="home-product-title">Smart Power meter</h1>
-              <p className="home-product-details">
-                Our Smart Power Meter transforms traditional energy systems by
-                delivering precise, real-time insights into power consumption.
-                Designed to support energy efficiency and sustainability, it
-                enables seamless integration with smart building technologies,
-                helping users monitor usage patterns, reduce energy waste, and
-                make informed decisions. Whether in homes, businesses, or
-                industrial setups, this device lays the groundwork for a
-                smarter, greener, and more reliable power infrastructure.
-              </p>
-              <a href="#" className="link view-product-link">
+              <a href="/products/water" className="link view-product-link">
                 Learn more <i className="bi bi-arrow-right"></i>
               </a>
             </div>

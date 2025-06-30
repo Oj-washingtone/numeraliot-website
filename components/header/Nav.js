@@ -15,25 +15,12 @@ const navItems = [
         icon: "/icons/SIMBA-SPEED-ICON.png",
       },
       {
-        name: "Bundi Vehicle Tracking & Security",
+        name: "Vehicle Tracking & Security",
         description: "Real-time tracking and protection for your vehicle.",
         link: "/products/bundi",
         icon: "/icons/Bundi Tracking Icon.png",
       },
-      {
-        name: "Hewa speakers",
-        description:
-          "Compact, high-quality sound with dual pairing for a richer experience.",
-        link: "/products/hewa",
-        icon: "/icons/HEWA-ICON.png",
-      },
-      {
-        name: "NIOT Smart Power Meter",
-        description:
-          "Track usage, share tokens, and manage power effortlessly.",
-        link: "/products/power",
-        icon: "/icons/Power-Meter-ICON.png",
-      },
+
       {
         name: "NIOT Smart Water Meter",
         description:
@@ -41,18 +28,18 @@ const navItems = [
         link: "/products/water",
         icon: "/icons/Water-Meter.png",
       },
-      {
-        name: "NIOT Smart Gas Meter",
-        description:
-          "Monitor usage, enhance safety, and manage gas efficiently.",
-        link: "/products/#",
-        icon: "/icons/Gas-Meter.png",
-      },
+
       {
         name: "Transit tag",
         description: "Monitor your kids transportation from and to school",
         link: "https://transittag.com/",
         icon: "/icons/Transit-Tag-Icon.png",
+      },
+      {
+        name: "Infinity engine",
+        description: "Infinity engine",
+        link: "solutions/solution",
+        icon: "/icons/Infinity-Icon.png",
       },
     ],
   },
@@ -68,9 +55,16 @@ const navItems = [
         icon: "/icons/Hardware-icon.png",
       },
       {
-        name: "Fleet Telematics",
+        name: "Hardware Design",
         description:
-          "Real-time tracking, analytics, and optimization for smarter fleet management.",
+          "Designing and producing high-quality IoT devices at scale.",
+        link: "solutions/solution",
+        icon: "/icons/Hardware-icon.png",
+      },
+      {
+        name: "Software Development",
+        description:
+          "reliable and scalable software solutions tailored to your unique business needs. ",
         link: "solutions/solution",
         icon: "/icons/Fleet-Telematics Icon.png",
       },
@@ -81,12 +75,6 @@ const navItems = [
         link: "solutions/solution",
         icon: "/icons/IOT-PLATFORMS-ICON.png",
       },
-      {
-        name: "Infinity engine",
-        description: "Infinity engine",
-        link: "solutions/solution",
-        icon: "/icons/Infinity-Icon.png",
-      },
     ],
   },
   {
@@ -96,42 +84,37 @@ const navItems = [
       {
         name: "Leadership",
         description: "Meet our leadership team",
-        link: "#",
+        link: "/company/leadership",
       },
       {
         name: "Awards & Recognitions",
         description: " Celebrating excellence and industry leadership.",
-        link: "#",
+        link: "/company/awards-recognitions",
       },
       {
         name: "Partners",
         description: "Meet Our partners",
-        link: "#",
+        link: "/company/partners",
       },
       {
         name: "Careers",
         description: "Join our team and shape the future of IoT with us.",
-        link: "#",
+        link: "/company/careers",
       },
       {
         name: "Press",
         description:
           "Latest news, updates, and media coverage about our innovations.",
-        link: "#",
+        link: "/company/press",
       },
       {
         name: "Events",
         description: "Join us in our upcoming events",
-        link: "#",
-      },
-      {
-        name: "FAQs",
-        description:
-          "Get answers to common questions about our products and services.",
-        link: "#",
+        link: "/company/events",
       },
     ],
   },
+  { name: "FAQs", hasDropdown: false, link: "/company/faqs" },
   { name: "Blog", hasDropdown: false, link: "#" },
 ];
 
