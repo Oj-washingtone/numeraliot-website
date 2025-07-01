@@ -201,6 +201,21 @@ body {
   background-color: #01d65a;
 }
 
+.btn-dark {
+  background-color: #111;
+  color: white;
+  padding: 8px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn-dark i {
+  margin: 0 5px;
+}
+
 @media screen and (max-width: 768px) {
   .header-center {
     width: 100%;
@@ -208,5 +223,9 @@ body {
 
   .header-title {
     font-size: 25px;
+  }
+
+  .btn-dark {
+    width: 100%;
   }
 }

@@ -70,7 +70,26 @@
   align-items: center;
   justify-content: center;
   font-family: "Inter", sans-serif;
+  position: relative;
+  isolation: isolate;
   /* background-image: url("/gridlines.png"); */
+}
+
+.banner-other-pages::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* stretch to all four edges */
+  background-image:
+      /* vertical lines */ linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.05) 1px,
+      transparent 1px
+    ),
+    /* horizontal lines */
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px; /* size of grid cells */
+  pointer-events: none; /* clicks go through to underlying element */
+  z-index: -1; /* keep behind content */
 }
 
 .banner-other-pages .container {
