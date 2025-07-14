@@ -88,54 +88,39 @@ const products = {
     ],
   },
 
-  power: {
-    productName: "Smart Power Meter",
-    mainImage: "/products/HILA0553.png",
-    featuresImage: "/products/power-meter.png",
-    tag: "Utilities",
+  infinity: {
+    productName: "Infinity Engine",
+    mainImage: "/products/infinity-engine.png",
+    featuresImage: "/products/infinity-engine.png",
+    tag: "Microcontrollers",
     intro:
-      "A smart prepaid power meter designed for landlords, developers, and firms seeking transparent, automated energy management.",
+      "This communication module powers our hardware devices. The features include 4G LTE communication, \nRTOS/Linux processing, and input/output pin control.",
     features: [
       {
-        feature: "Flexible Top-Up",
+        feature: "Connectivity",
         explanation:
-          "Recharge via web portal or mobile money. Tokens are instantly credited—no manual entry required.",
+          "With 4G communication, this feature enables our devices to connect and communicate with each other as well as our central server. It supports a wide range of wireless and cellular protocols, allowing for flexible deployment in a variety of conditions",
       },
       {
-        feature: "Remote Power Control",
+        feature: "Data Transmission",
         explanation:
-          "Switch power on/off remotely—ideal for vacant units, maintenance, or usage enforcement.",
+          "Enables quick data transmission to cloud servers or local gateways for processing.",
       },
       {
-        feature: "Peer-to-Peer Token Transfer",
+        feature: "Power Efficiency",
         explanation:
-          "Easily sambaza tokens between meters within the same building or estate.",
+          "Utilizes and maintains minimal power consumption. This allows our devices to work for longer periods of time without needing to be charged frequently.",
       },
       {
-        feature: "Energy Budgeting & Alerts",
+        feature: "Security",
         explanation:
-          "Set usage limits and receive alerts or automatically cut power to avoid overruns.",
-      },
-      {
-        feature: "Real-Time Meter Health",
-        explanation:
-          "Monitors voltage, current, tampering, and battery status for proactive maintenance.",
-      },
-      {
-        feature: "Consumption Reporting",
-        explanation:
-          "Generates daily, weekly, or monthly usage reports to support optimization.",
-      },
-      {
-        feature: "OTA Firmware Management",
-        explanation:
-          "Receive firmware updates and diagnostics remotely, reducing on-site visits.",
+          "Using built-in encryption and authentication procedures, the Numeral Infinity Engine polices data exchanged between devices to verify its security and guard against possible breaches.",
       },
     ],
   },
 
   bundi: {
-    productName: "Vehicle Tracking & Security ",
+    productName: "iKontrol My Car ",
     mainImage: "/products/TRACKER-ENCLOSURE-BLACK-1.png",
     featuresImage: "/products/TRACKER-ENCLOSURE-BLACK-1.png",
     tag: "Transport & Safety",
@@ -143,33 +128,40 @@ const products = {
       "Numeral IOT has developed firmware, hardware and software for a tracking device and a car security system called BUNDI.",
     features: [
       {
-        feature: "SMS Alert",
+        feature: "Geo-Fencing",
         explanation:
-          "in case of tampering, alerts are sent to the owner through SM",
+          "Set virtual boundaries and receive instant alerts when your vehicle enters or exits designated zones.",
       },
       {
-        feature: "Stop Engine",
+        feature: "Historical Route Playback ",
         explanation:
-          "Using your mobile phone a user can remotely stop the fitted vehicle.",
+          "Review past routes and locations with stored historical movement data..",
       },
       {
-        feature: "Start Engine",
+        feature: "Custom Alerts and Notifications",
         explanation:
-          "A user can as well turn on his vehicle remotely using his mobile phone.",
+          "Set custom alerts for events such as low battery, geo-fence breaches, motion detection, overspeed alerts, and ignition alerts",
       },
       {
-        feature: "Geofence",
-        explanation: "this allows users to set travel distance limits",
+        feature: "WiFi Hotspots",
+        explanation:
+          "Enjoy internet access within your vehicle with WiFi connectivity, supporting multiple devices",
       },
 
       {
-        feature: "History replay",
-        explanation: "a user can replay all the locations his vehicle visited",
+        feature: "Engine Cut-Out (Immobiliser) Feature",
+        explanation:
+          "Remotely control your vehicle’s engine with the ability to stop the vehicle.",
       },
       {
-        feature: "Mobile app",
+        feature: "OBD-II Data Access",
         explanation:
-          "we have developed android and IOS mobile apps for users to monitor their assets.",
+          "Diagnose vehicle performance on various parameters like engine RPM, speed, and fuel level. Receive alerts for maintenance issues",
+      },
+      {
+        feature: "5G LTE Connectivity ",
+        explanation:
+          "Fast data transmission and firmware updates with wide coverage even in low signal areas.",
       },
     ],
   },

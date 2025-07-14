@@ -25,6 +25,10 @@
 
 .product-info-wrapper {
   padding: 20px;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .view-product-link {

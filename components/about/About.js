@@ -1,5 +1,6 @@
 import React from "react";
 import "./about.css";
+import Link from "next/link";
 // import teamMeeting from "./assets/team-meeting.jpg"; // Replace with correct path
 // import officeView from "./assets/office-view.jpg"; // Replace with correct path
 
@@ -58,7 +59,9 @@ export default function About() {
                 Reliability First
               </li>
             </ul>
-            <button className="discover-button">Learn more</button>
+            {/* <Link href={"/company/about"}>
+              <div className="discover-button">Learn more</div>
+            </Link> */}
           </div>
         </div>
       </div>

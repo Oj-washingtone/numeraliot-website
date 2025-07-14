@@ -23,16 +23,16 @@ export default function Hero() {
       <div className="hero-descriptions-wrapper">
         <div className="badge">🚀 # Africa's no. 1 hardware manufacturer</div>
         <h1 className="hero-main-text">
-          Building Africa's largest
+          Shaping Africa's IoT
           <br />
-          <span className="secondary-title-part">IoT service platform</span>
+          <span className="secondary-title-part">Landscape</span>
         </h1>
         <p className="hero-description">
-          We’re building the continent’s most robust Internet of Things (IoT)
-          service platform — connecting people, businesses, and devices through
-          smart, scalable, and locally manufactured technology. From smart
-          metering to industrial automation, we empower innovation at every
-          level.
+          we are committed to designing, developing, and manufacturing
+          cutting-edge Internet of Things (IoT) solutions that address the
+          unique challenges and opportunities within Africa, connecting people,
+          and businesses,through smart, scalable, and locally manufactured
+          technology.
         </p>
 
         <button className="hero-btn" onClick={handleNavigation}>

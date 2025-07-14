@@ -4,6 +4,7 @@ import "../product.css";
 import ProductFeatures from "@/components/products/ProductFeatures";
 import ProductBanner from "@/components/products/ProductBanner";
 import products from "@/data/products";
+import Banner from "@/components/hero/Banner";
 
 export default async function Products({ params }) {
   const { name } = await params;
@@ -15,7 +16,12 @@ export default async function Products({ params }) {
 
   return (
     <div className="">
-      <ProductBanner product={product} />
+      <Banner
+        title={product.productName}
+        description={product.intro}
+        tag={product.tag}
+      />
+      {/* <ProductBanner product={product} /> */}
       <ProductFeatures product={product} />
     </div>
   );

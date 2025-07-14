@@ -1,0 +1,49 @@
+.services {
+  font-family: "Inter", sans-serif;
+}
+
+.services p {
+  font-size: 14px;
+}
+
+.service-section-image {
+  padding: 20px;
+}
+
+.service-section-image img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.service-section {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-title {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.service-list {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f6fcf9;
+}
+
+.service-list .span {
+  display: inline-block;
+  background-color: #e8fff2;
+  color: var(--primary-color);
+  border-left: 2px solid var(--primary-color);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

@@ -15,7 +15,7 @@ const navItems = [
         icon: "/icons/SIMBA-SPEED-ICON.png",
       },
       {
-        name: "Vehicle Tracking & Security",
+        name: "iKontrol My Car",
         description: "Real-time tracking and protection for your vehicle.",
         link: "/products/bundi",
         icon: "/icons/Bundi Tracking Icon.png",
@@ -38,45 +38,16 @@ const navItems = [
       {
         name: "Infinity engine",
         description: "Infinity engine",
-        link: "solutions/solution",
+        link: "/products/infinity",
         icon: "/icons/Infinity-Icon.png",
       },
     ],
   },
-  {
-    name: "Solutions",
-    hasDropdown: true,
-    content: [
-      {
-        name: "Hardware Manufacturing",
-        description:
-          "Designing and producing high-quality IoT devices at scale.",
-        link: "solutions/solution",
-        icon: "/icons/Hardware-icon.png",
-      },
-      {
-        name: "Hardware Design",
-        description:
-          "Designing and producing high-quality IoT devices at scale.",
-        link: "solutions/solution",
-        icon: "/icons/Hardware-icon.png",
-      },
-      {
-        name: "Software Development",
-        description:
-          "reliable and scalable software solutions tailored to your unique business needs. ",
-        link: "solutions/solution",
-        icon: "/icons/Fleet-Telematics Icon.png",
-      },
-      {
-        name: "IoT Platforms",
-        description:
-          "Scalable, secure, and intelligent connectivity for all your devices.",
-        link: "solutions/solution",
-        icon: "/icons/IOT-PLATFORMS-ICON.png",
-      },
-    ],
-  },
+  // {
+  //   name: "Services",
+  //   hasDropdown: false,
+  //   link: "/services",
+  // },
   {
     name: "Company",
     hasDropdown: true,
@@ -85,11 +56,6 @@ const navItems = [
         name: "Leadership",
         description: "Meet our leadership team",
         link: "/company/leadership",
-      },
-      {
-        name: "Awards & Recognitions",
-        description: " Celebrating excellence and industry leadership.",
-        link: "/company/awards-recognitions",
       },
       {
         name: "Partners",
@@ -105,12 +71,12 @@ const navItems = [
         name: "Press",
         description:
           "Latest news, updates, and media coverage about our innovations.",
-        link: "/company/press",
+        link: "#",
       },
       {
         name: "Events",
         description: "Join us in our upcoming events",
-        link: "/company/events",
+        link: "#",
       },
     ],
   },
